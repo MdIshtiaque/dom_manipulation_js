@@ -1,6 +1,6 @@
 let val = document.getElementById('task_list_title');
 
-console.log(val);
+// console.log(val);
 
 /* Changing Style */
 // val.style.backgroundColor = '#ef4444';
@@ -36,17 +36,22 @@ val.textContent = 'Task Collection';
 
 let tasks = document.getElementsByClassName('task-item');
 
-console.log(tasks);
+// console.log(tasks);
 
 
-let list = document.querySelectorAll('.task-item');
-list.forEach((element, index) => {
-  console.log(element.getElementsByClassName, element, index);
-  // element.textContent = "hello, this is task no "+ index;
-  element.textContent = `${index + 1}. Hello, I am a task.`; // object literal
-  element.style.margin = '2px';
-  element.style.backgroundColor = '#99f6e4';
-  element.style.borderRadius = '6px';
-  element.style.padding = '10px';
-});
-console.log(list);
+// let list = document.querySelectorAll('.task-item');
+// list.forEach((element, index) => {
+//   console.log(element.getElementsByClassName, element, index);
+//   // element.textContent = "hello, this is task no "+ index;
+//   element.textContent = `${index + 1}. Hello, I am a task.`; // object literal
+//   element.style.margin = '2px';
+//   element.style.backgroundColor = '#99f6e4';
+//   element.style.borderRadius = '6px';
+//   element.style.padding = '10px';
+// });
+// console.log(list);
+
+
+const item = document.querySelectorAll('div.task-item');
+item[0].style.color = "#818cf8";
+console.log(item);
